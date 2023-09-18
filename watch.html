@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Streamflix • Vos films et séries préférés</title>
+    <title>Streamflix • Vos films et séries préférés en streaming</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/watch.js"></script>
 </head>
 <body>
 
@@ -16,17 +18,10 @@
         <li style="float:right"><a class="active" href="logi.html">CONNEXION</a></li>
       </ul>
 
-    <div class="landing-text">
-        <p>👋 Salut!</p>
-        <p>&nbsp;&nbsp;&nbsp;Bienvenue sur votre nouveau site de vidéo à la demande préféré</p>
-    </div>
-
-    <img src="assets/img/home_cinema.svg" class="landing-img" alt="Home cinema" height="55%">
-
-    <a href="list.html"><button class="landing-btn">COMMENCER</button></a>
-
-
-    <div class="landing-footer"><p>Développement par NSA-DEV, tous droits réservés.</p></div>
+      <div id="player"></div>
+      <!--<iframe class="player" src="https://dooood.com/e/n8pjeqyxnpl9dhsr4h5juohq88vvmhgp" scrolling="no" frameborder="0" allowfullscreen="true"></iframe>-->
+    
+    <div class="landing-footer"></div>
 
 </body>
 </html>

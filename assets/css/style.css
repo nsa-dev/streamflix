@@ -8,7 +8,7 @@ body {
     top: 35%;
     left: 5%;
     text-indent: 0;
-    font-size: 28pt;
+    font-size: 1.7vw;
     color: #fff;
     line-break: 0;
     line-height: 10pt;
@@ -83,6 +83,7 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #1b0936;
+    user-select: none;
   }
   
   li {
@@ -116,6 +117,73 @@ ul {
     background-color: #15704f;
   }
 
+  .page-title {
+    position:relative;
+    margin-top:5%;
+    text-align:center;
+    text-transform: uppercase;
+    color:white;
+  }
+
+  .list {
+    position:absolute;
+    display:flex;
+    top: 17.5%;
+    left: 5%;
+    width: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .list .item, .list .item img {
+    margin:0.5vw;
+    width: 10vw;
+    height: 15vw;
+    border-radius: 0.5vw;
+    user-select: none;
+    transition: all .2s;
+  }
+
+  .list .item {
+    opacity: 0.65;
+  }
+
+
+  .list .item:hover {
+    box-shadow: rgba(240, 240, 240, 0.3) 0px 0 5vw, rgba(0, 0, 0, 0.22) 0px 0 1vw;
+    opacity: 1;
+    scale: 1.1;
+    cursor:pointer;
+  }
+
+  .list .item:hover .name {
+    opacity: 1;
+    transition: all 0s;
+  }
+  .list .item img {
+    position:absolute;
+    margin:0;
+    pointer-events:none;
+  }
+
+  .list .item .name {
+    position:absolute;
+    font-size: 1vw;
+    bottom: 0.0;
+    margin:0;
+    width:10vw;
+    height: 3vw;
+    line-height: 3vw;
+    background: rgba(10, 10, 10, .9);
+    color:white;
+    text-align:center;
+    text-transform: uppercase;
+    border-radius: 0 0 0.45vw 0.45vw;
+    opacity: 0;
+    transition: all .2s;
+  }
 
 
   .player {
